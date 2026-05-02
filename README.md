@@ -1,6 +1,6 @@
 # 🚀 DevOps AutoOps Platform
 
-Cloud-native DevOps automation platform that integrates **Kubernetes deployments**, **Jenkins CI/CD**, and **real-time observability** into a single control dashboard.
+Cloud-native DevOps automation platform that integrates **Kubernetes deployments**, **Jenkins CI/CD**, and **real-time observability** into a unified control dashboard.
 
 > Built to simulate AWS/Azure DevOps consoles with live pipeline control, metrics, and logs.
 
@@ -9,12 +9,12 @@ Cloud-native DevOps automation platform that integrates **Kubernetes deployments
 ## ✨ Key Features
 
 - ⚙️ **CI/CD Automation** – Trigger Jenkins pipelines via API (token + CSRF crumb)
-- ☸️ **Kubernetes Orchestration** – Deploy apps using Docker + Helm on Minikube
-- 📊 **Real-Time Monitoring** – CPU/Memory metrics via metrics-server
-- 📜 **Live Log Streaming** – Jenkins build logs in UI
+- ☸️ **Kubernetes Orchestration** – Deploy applications using Docker + Helm on Minikube
+- 📊 **Real-Time Monitoring** – CPU & Memory metrics using metrics-server
+- 📜 **Live Log Streaming** – Jenkins build logs inside dashboard
 - 🧠 **Control Plane API** – Node.js (Express) backend for orchestration
 - 🎨 **Glassmorphism Dashboard** – iOS-style UI with charts (Chart.js)
-- 🧩 **One-Click Setup** – Shell script to bootstrap Docker, K8s, Jenkins
+- 🧩 **One-Click Setup** – Automated environment setup using shell script
 
 ---
 
@@ -23,17 +23,33 @@ Cloud-native DevOps automation platform that integrates **Kubernetes deployments
 ![Architecture](docs/architecture.png)
 
 **Flow:**
-User → Dashboard → Node.js API → (Jenkins CI/CD + Kubernetes) → Metrics & Logs → UI
+User → Dashboard → Node.js API → Jenkins + Kubernetes → Metrics & Logs → UI
 
 ---
 
-## �� Tech Stack
+## 📸 Screenshots
+
+### Dashboard UI
+![Dashboard](docs/dashboard.png)
+
+### Jenkins CI/CD Pipeline
+![Jenkins](docs/jenkins.png)
+
+### Kubernetes Pods
+![Pods](docs/pods.png)
+
+### Resource Metrics
+![Metrics](docs/metrics.png)
+
+---
+
+## 🧰 Tech Stack
 
 - **DevOps:** Docker, Kubernetes (Minikube), Helm, Jenkins  
-- **Backend:** Node.js, Express  
+- **Backend:** Node.js, Express.js  
 - **Frontend:** HTML, CSS (Glass UI), JavaScript, Chart.js  
 - **Monitoring:** metrics-server, kubectl  
-- **Tools:** Git, Linux, Shell scripting  
+- **Tools:** Git, Linux, Shell Scripting  
 
 ---
 
@@ -48,7 +64,8 @@ User → Dashboard → Node.js API → (Jenkins CI/CD + Kubernetes) → Metrics 
 
 ---
 
-### 2. Clone Repo
+### 2. Clone Repository
+
 ```bash
 git clone https://github.com/Pramu55/devops-autoops-app.git
 cd devops-autoops-app
